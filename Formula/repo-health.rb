@@ -5,21 +5,21 @@
 class RepoHealth < Formula
   desc "A CLI/TUI tool that scans a project and shows an interactive health dashboard"
   homepage "https://github.com/FerrBen/repo-health"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.0/repo-health_0.1.0_darwin_amd64.tar.gz"
-      sha256 "05cd3f73cce336848429599f57d516698118404c949ec2da261a525a4c4c19b2"
+      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.1/repo-health_0.1.1_darwin_amd64.tar.gz"
+      sha256 "135804024a37f18db45f2e51c29892c135de09b1244d9ac1d5eb1367e0eb990c"
 
       def install
         bin.install "repo-health"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.0/repo-health_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3bc1bcbb2ebb6caab776992ced4d1f48d85eedde1efed8b8b74720e60e309433"
+      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.1/repo-health_0.1.1_darwin_arm64.tar.gz"
+      sha256 "ec6054fa30c9525ba5d021da454519ce6c0fe8943ac024111d10d87ca92d77c2"
 
       def install
         bin.install "repo-health"
@@ -29,15 +29,15 @@ class RepoHealth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.0/repo-health_0.1.0_linux_amd64.tar.gz"
-      sha256 "252ce360e032e24a0c972938b31cc5f20892f83fc266c512d574e4d23bea15fc"
+      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.1/repo-health_0.1.1_linux_amd64.tar.gz"
+      sha256 "38b3b52c46429d52a4a9b46bec66509bcaba04fb98e1ca4659453fbf656aaee5"
       def install
         bin.install "repo-health"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.0/repo-health_0.1.0_linux_arm64.tar.gz"
-      sha256 "254404d7c97adcb4160445e5c9aea51bdcebe9b8d4fd21d882d3037e71c32245"
+      url "https://github.com/FerrBen/repo-health/releases/download/v0.1.1/repo-health_0.1.1_linux_arm64.tar.gz"
+      sha256 "83fb8461f01939c1d13e14287975c554d973f13c81bc6d4f3d27a9c7cb1452be"
       def install
         bin.install "repo-health"
       end
